@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "supermemory": {
+      "version": "1.0.0",
+      "installedAt": 1772908866745
+    },
+    "browser-use": {
+      "version": "1.0.2",
+      "installedAt": 1772908926180
+    },
+    "x-research": {
+      "version": "1.0.0",
+      "installedAt": 1772909114812
+    },
+    "qmd": {
+      "version": "1.0.0",
+      "installedAt": 1772909299236
+    }
+  }
+}

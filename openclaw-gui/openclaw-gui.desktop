@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OpenClaw AI 助手
+Comment=OpenClaw AI Assistant - Desktop Launcher
+Exec=/workspace/projects/openclaw-gui/launch.sh
+Icon=applications-internet
+Terminal=true
+Categories=Network;Chat;
+Keywords=AI;Chat;Assistant;OpenClaw;
