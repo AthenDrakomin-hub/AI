@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-03-08T03:31:13.821Z"
+    "lastTouchedAt": "2026-03-08T04:23:14.062Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-05T16:16:05.545Z",
-    "lastRunVersion": "2026.2.1",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-03-08T04:23:14.043Z",
+    "lastRunVersion": "2026.3.2",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "browser": {
@@ -234,9 +234,23 @@
     },
     "telegram": {
       "enabled": true,
-      "dmPolicy": "pairing",
+      "dmPolicy": "open",
       "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0",
-      "groupPolicy": "allowlist",
+      "allowFrom": [
+        "*"
+      ],
+      "groupPolicy": "open",
+      "accounts": {
+        "default": {
+          "enabled": true,
+          "dmPolicy": "open",
+          "allowFrom": [
+            "*"
+          ],
+          "groupPolicy": "open",
+          "streaming": "partial"
+        }
+      },
       "streaming": "partial"
     },
     "feishu": {
@@ -250,18 +264,6 @@
       "groupAllowFrom": [],
       "groupPolicy": "open",
       "requireMention": true
-    },
-    "telegram": {
-      "enabled": true,
-      "dmPolicy": "pairing",
-      "groupPolicy": "open",
-      "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0",
-      "accounts": {
-        "default": {
-          "enabled": true,
-          "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0"
-        }
-      }
     }
   },
   "gateway": {
