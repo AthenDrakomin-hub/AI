@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-03-07T16:00:44.552Z"
+    "lastTouchedAt": "2026-03-08T03:31:13.821Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-05T16:16:05.545Z",
@@ -199,6 +199,11 @@
       "fetch": {
         "enabled": false
       }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
     }
   },
   "messages": {
@@ -227,6 +232,13 @@
       },
       "mediaMaxMb": 50
     },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0",
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    },
     "feishu": {
       "allowFrom": [],
       "appId": "",
@@ -238,6 +250,18 @@
       "groupAllowFrom": [],
       "groupPolicy": "open",
       "requireMention": true
+    },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "groupPolicy": "open",
+      "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0",
+      "accounts": {
+        "default": {
+          "enabled": true,
+          "botToken": "8600105667:AAHWiZM4gkugWnNLhJ56fBgRVOIB3OwlAg0"
+        }
+      }
     }
   },
   "gateway": {
@@ -366,8 +390,14 @@
   "plugins": {
     "allow": [
       "feishu-openclaw-plugin",
-      "whatsapp"
+      "whatsapp",
+      "telegram"
     ],
+    "load": {
+      "paths": [
+        "/usr/lib/node_modules/openclaw/extensions/voice-call"
+      ]
+    },
     "entries": {
       "feishu": {
         "enabled": false
@@ -376,6 +406,12 @@
         "enabled": true
       },
       "whatsapp": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "voice-call": {
         "enabled": true
       }
     },
@@ -392,6 +428,13 @@
         "shasum": "1373c900ec62ceb6e082430aee462db926b68f7c",
         "resolvedAt": "2026-03-06T11:48:07.767Z",
         "installedAt": "2026-03-06T11:48:19.178Z"
+      },
+      "voice-call": {
+        "source": "path",
+        "spec": "voice-call",
+        "sourcePath": "/usr/lib/node_modules/openclaw/extensions/voice-call",
+        "installPath": "/usr/lib/node_modules/openclaw/extensions/voice-call",
+        "installedAt": "2026-03-07T19:33:31.876Z"
       }
     }
   }
